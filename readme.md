@@ -34,7 +34,8 @@ Wait until model is loaded and this console message appears: **almost ready**
 
 Then just speak something and the transcription works as expected:
 
-![image](https://github.com/jrichardsz/nodejs-wav-vosk-transcription/assets/3322836/1adb2725-a057-43bc-a45b-d7b71d82b582)
+![image](https://github.com/srJones1/nodes-wave-transcription-issue/assets/67037530/02009642-af19-44a0-8f9b-3f170d01464e)
+
 
 
 ## Don't work using native microphone and sockets
@@ -57,7 +58,8 @@ node client_native_with_socket.js
 
 Audio will be sent to the server. In the server log you will see that is not a wave format for vosk but it is a valid wav file
 
-![image](https://github.com/jrichardsz/nodejs-wav-vosk-transcription/assets/3322836/ed18e7dc-11a9-4eec-b36a-1bc18aeb09ee)
+![image](https://github.com/srJones1/nodes-wave-transcription-issue/assets/67037530/22a7e012-eccd-4376-b3b0-4ebf5e6f0df9)
+
 
 
 ## Don't work using web microphone and sockets
@@ -74,11 +76,11 @@ node client_web.js
 - Press "stop record".
 - Finally press "send recorded wav to socket"
 
-![image](https://github.com/jrichardsz/nodejs-wav-vosk-transcription/assets/3322836/529dbf18-36e6-4c88-81f6-d9da40ccfa36)
+![image](https://github.com/srJones1/nodes-wave-transcription-issue/assets/67037530/4d076c5f-8a88-40f4-94c9-bc8a37b79afb)
 
-- Result is the same in the server
 
-![image](https://github.com/jrichardsz/nodejs-wav-vosk-transcription/assets/3322836/ed18e7dc-11a9-4eec-b36a-1bc18aeb09ee)
+- Result is the same of **Don't work using native microphone and sockets**
+
 
 ### Note: 
 
