@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Media Recorder Example</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.3/socket.io.js"></script>
+</head>
+
+<body>
+  <h1>Simple Media Recorder Sample</h1>
+
+  <p>Settings:</p>
+  <p>
+    <label style="width: 300px;display: inline-block;">Channel: </label>
+    <input type="radio" id="stereo" name="channel_selection" value="stereo" checked>
+    <label for="mono">stereo</label>
+    <input type="radio" id="mono" name="channel_selection" value="mono">
+    <label for="mono">mono</label>
+  </p>
+
+  <p>
+    <label style="width: 300px;display: inline-block;" >Sample rate: </label>
+    <input type="input" id="sample_rate_input" name="sample_rate_input" value="44100"/>
+  </p>  
+
+  <button id="start_button">Start Record</button>
+  <button id="stop_button">Stop Record</button>
+  <button id="save_button" disabled>Save recorded wav</button>
+  <button id="send_socket_button" disabled>Send recorded wav to socket</button>
+  <hr>
+
+  <audio id="localVideo" controls></audio>
+
+  <script src="wav_helper.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
